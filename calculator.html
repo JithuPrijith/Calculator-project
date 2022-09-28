@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="calculator.css" rel="stylesheet"><link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <div class="container my-4"> 
+        
+        <div class="calculator card  mx-auto">
+        
+            <input id="result" type="text" class="calculator-screen" value="" disabled />
+        
+            <div class="calculator-keys">
+        
+              <button type="button" class="btn btn-info" onclick="displayFunction('+')" value="+">+</button>
+              <button type="button" class="btn btn-info" onclick="displayFunction('-')" value="-">-</button>
+              <button type="button" class="btn btn-info" onclick="displayFunction('*')" value="*">&times;</button>
+              <button type="button" class="btn btn-info" onclick="displayFunction('/')" value="/">&divide;</button>
+        
+              <button type="button" onclick="displayFunction(7)" value="7" class="btn btn-light">7</button>
+              <button type="button" onclick="displayFunction(8)" value="8" class="btn btn-light">8</button>
+              <button type="button" onclick="displayFunction(9)" value="9" class="btn btn-light">9</button>
+         
+              <button type="button" onclick="displayFunction(4)" value="4" class="btn btn-light">4</button>
+              <button type="button" onclick="displayFunction(5)" value="5" class="btn btn-light">5</button>
+              <button type="button" onclick="displayFunction(6)" value="6" class="btn btn-light">6</button>
+         
+              <button type="button" onclick="displayFunction(1)" value="1" class="btn btn-light">1</button>
+              <button type="button" onclick="displayFunction(2)" value="2" class="btn btn-light">2</button>
+              <button type="button" onclick="displayFunction(3)" value="3" class="btn btn-light">3</button>
+        
+              <button type="button" onclick="displayFunction(0)" value="0" class="btn btn-light">0</button>
+              <button type="button" class="btn btn-secondary" value="." onclick="removeLastItem()">X</button>
+              <button type="button" class="btn btn-danger btn-sm" onclick="clearBox()">AC</button>
+        
+              <button type="button" onclick="evaluateExpression()" class="btn btn-light equal-sign operator btn btn-default waves-effect" value="=">=</button>
+        
+            </div>
+          </div>
+        </div>
+</body>
+</html>
